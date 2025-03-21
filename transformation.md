@@ -1,4 +1,4 @@
-# transformation: Unicode Encoding Trick
+# transformation: Unicode decoding
 
 ## **題目分析**
 題目給出的 Python 編碼方式如下：
@@ -36,8 +36,6 @@ dec = ''.join([chr(ord(c) >> 8) + chr(ord(c) & 0xFF) for c in enc])
 print(dec)  # 恢復原始 flag
 ```
 這將輸出原始 `flag`。
-
-# CTF Write-up: Unicode Encoding Trick
 
 ## **變形混淆手法及判讀方式比較**
 
